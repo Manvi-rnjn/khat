@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Letter</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- EVERYTHING THAT CAN BLUR -->
+    <div id="app">
+
+        <!-- Envelope screen -->
+        <div id="envelope-container">
+            <img src="envelope.jpg" alt="Envelope" id="envelope"/>
+            <p>💖Chitthi💖</p>
+        </div>
+
+        <!-- Letter Screen -->
+        <div id="letter-container">
+            <div class="letter-window">
+                <h1 id="letter-title">will you be my valentine ?</h1>
+
+                <img src="cat.jpg" class="cat" id="letter-cat">
+
+                <div class="buttons" id="letter-buttons">
+                    <img src="yes.jpg" class="btn yes-btn" alt="Yes">
+                    <div class="no-wrapper">
+                        <img src="no.jpg" class="btn no-btn" alt="No">
+                    </div>
+                </div>
+
+                <img 
+                    src="giftbox.png"
+                    id="gift-box"
+                    alt="Gift Box"
+                    style="display: none; cursor: pointer;"
+                />
+            </div>
+        </div>
+
+    </div>
+
+    <!-- VIDEO (NEVER BLURRED) -->
+    <video 
+        id="gift-video"
+        src="dvdhai.mp4"
+        style="display: none;"
+        controls
+    ></video>
+
+    <div id="vignette"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
